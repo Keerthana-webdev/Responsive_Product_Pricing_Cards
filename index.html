@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive SaaS pricing cards with a Monthly and Yearly billing toggle.">
+  <title>Pricing Cards - Monthly and Yearly Plans</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="intro">
+    <p class="eyebrow">Pricing</p>
+    <h1>Simple pricing that grows with you</h1>
+    <p class="lead">Start small, upgrade when you are ready. Switch to yearly billing and save about 20 percent.</p>
+  </header>
+
+  <main>
+    <section class="pricing" aria-labelledby="plans-title">
+      <h2 id="plans-title" class="visually-hidden">Compare plans</h2>
+
+      <!-- Billing toggle -->
+      <div class="billing" role="group" aria-label="Billing period">
+        <button id="monthly" class="active" type="button" aria-pressed="true">Monthly</button>
+        <button id="yearly" type="button" aria-pressed="false">Yearly <span class="save">Save 20%</span></button>
+      </div>
+
+      <div class="cards">
+
+        <!-- Starter -->
+        <article class="card">
+          <h3>Starter</h3>
+          <p class="tagline">For individuals trying things out.</p>
+          <p class="price-row">
+            <span class="currency">&#8377;</span>
+            <span class="price" data-monthly="299" data-yearly="2,870">299</span>
+            <span class="unit" data-monthly="per month" data-yearly="per year">per month</span>
+          </p>
+          <p class="note" data-monthly="Billed monthly. Cancel anytime." data-yearly="Billed yearly. You save &#8377;718.">Billed monthly. Cancel anytime.</p>
+          <ul class="features">
+            <li>1 active project</li>
+            <li>5 GB storage</li>
+            <li>Basic analytics</li>
+            <li>Email support</li>
+            <li>Community access</li>
+          </ul>
+          <button class="cta" type="button">Get Starter</button>
+        </article>
+
+        <!-- Pro (Popular) -->
+        <article class="card popular">
+          <span class="ribbon ribbon-popular">Popular</span>
+          <h3>Pro</h3>
+          <p class="tagline">For freelancers and growing teams.</p>
+          <p class="price-row">
+            <span class="currency">&#8377;</span>
+            <span class="price" data-monthly="799" data-yearly="7,670">799</span>
+            <span class="unit" data-monthly="per month" data-yearly="per year">per month</span>
+          </p>
+          <p class="note" data-monthly="Billed monthly. Cancel anytime." data-yearly="Billed yearly. You save &#8377;1,918.">Billed monthly. Cancel anytime.</p>
+          <ul class="features">
+            <li>25 active projects</li>
+            <li>100 GB storage</li>
+            <li>Advanced analytics</li>
+            <li>Priority email support</li>
+            <li>Custom domains</li>
+          </ul>
+          <button class="cta" type="button">Get Pro</button>
+        </article>
+
+        <!-- Team (Best Value) -->
+        <article class="card">
+          <span class="ribbon ribbon-value">Best Value</span>
+          <h3>Team</h3>
+          <p class="tagline">For companies that need control.</p>
+          <p class="price-row">
+            <span class="currency">&#8377;</span>
+            <span class="price" data-monthly="1,499" data-yearly="14,390">1,499</span>
+            <span class="unit" data-monthly="per month" data-yearly="per year">per month</span>
+          </p>
+          <p class="note" data-monthly="Billed monthly. Cancel anytime." data-yearly="Billed yearly. You save &#8377;3,598.">Billed monthly. Cancel anytime.</p>
+          <ul class="features">
+            <li>Unlimited projects</li>
+            <li>1 TB storage</li>
+            <li>Roles and permissions</li>
+            <li>Dedicated account manager</li>
+            <li>Single sign-on (SSO)</li>
+          </ul>
+          <button class="cta" type="button">Get Team</button>
+        </article>
+
+      </div>
+
+      <p id="status" class="visually-hidden" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>All plans and prices on this page are made up for a design exercise.</p>
+  </footer>
+</body>
+</html>
