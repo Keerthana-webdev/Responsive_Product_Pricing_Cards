@@ -1,11 +1,8 @@
-// script.js: Monthly / Yearly billing toggle
-// All numbers and labels live in data-monthly / data-yearly attributes in the HTML,
-// so this script contains no repeated prices.
-
 const buttons = {
   monthly: document.getElementById("monthly"),
   yearly: document.getElementById("yearly")
 };
+
 const swappable = document.querySelectorAll("[data-monthly][data-yearly]");
 const status = document.getElementById("status");
 
